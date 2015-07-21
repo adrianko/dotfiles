@@ -30,6 +30,14 @@ fncurlh() {
     curl -i $1 && echo ''
 }
 
+fnlisten() {
+    while true ; do $2 | nc -l 127.0.0.1 $1 ; done
+}
+
+fnproc() {
+    ps aux | grep -v grep | egrep "$1"
+}
+
 alias rmtrash='rm -rf ~/.Trash/*'
 alias pyws=fnpyws
 alias ccat='pygmentize -g -O tabsize=4,style=colorful,linenos=1'
@@ -41,3 +49,6 @@ alias ts='date -r'
 alias showicons='defaults write com.apple.finder CreateDesktop -bool true && killall Finder'
 alias hideicons='defaults write com.apple.finder CreateDesktop -bool false && killall Finder'
 alias curlh=fncurlh
+alias listen=fnlisten
+alias mvup='mv * .[^.]* ..'
+alias proc=fnproc
