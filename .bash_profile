@@ -38,6 +38,10 @@ fnproc() {
     ps aux | grep -v grep | egrep "$1"
 }
 
+fncatcom() {
+    cat $1 | egrep -v '^;|#|^$'
+}
+
 alias rmtrash='rm -rf ~/.Trash/*'
 alias pyws=fnpyws
 alias ccat='pygmentize -g -O tabsize=4,style=colorful,linenos=1'
@@ -52,3 +56,4 @@ alias curlh=fncurlh
 alias listen=fnlisten
 alias mvup='mv * .[^.]* ..'
 alias proc=fnproc
+alias catcom=fncatcom
