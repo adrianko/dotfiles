@@ -15,7 +15,7 @@ fi
 
 if [ "$(uname)" == "Darwin" ]; then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-    brew install scala go ncdu john nmap wget gradle hr
+    brew install scala go ncdu john nmap wget gradle hr vim
     brew tap caskroom/cask
     brew install brew-cask
     brew cask install java
