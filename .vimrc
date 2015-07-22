@@ -40,5 +40,6 @@ au BufRead,BufNewFile *.go set filetype=go
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:syntastic_mode_map = {'mode': 'active', 'active_filetypes': ['c'], 'passive_filetypes': ['go']}
+let g:gitgutter_map_keys = 0
 filetype plugin indent on
 imap <S-Tab> <C-o><<
