@@ -7,7 +7,9 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
 Bundle 'bling/vim-airline'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'Yggdroot/indentLine'
 call vundle#end()
+colorscheme default
 syntax on
 set tabstop=4
 set shiftwidth=4
@@ -40,6 +42,11 @@ au BufRead,BufNewFile *.go set filetype=go
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:syntastic_mode_map = {'mode': 'active', 'active_filetypes': ['c'], 'passive_filetypes': ['go']}
-let g:gitgutter_map_keys = 0
+let g:gitgutter_map_keys = 0 
+let g:indentLine_loaded = 1
+let g:indentLine_enabled = 1
+let g:indentLine_color_term = 239
+let g:indentLine_color_gui = '#A4E57E'
+let g:indentLine_char = '|'
 filetype plugin indent on
 imap <S-Tab> <C-o><<
