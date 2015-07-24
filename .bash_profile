@@ -59,3 +59,5 @@ alias proc=fnproc
 alias catcom=fncatcom
 alias gitc='git commit -m'
 alias gita='git add -p'
+alias gitpl='git pull'
+alias gitps='git push'
