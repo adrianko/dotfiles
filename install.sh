@@ -11,7 +11,7 @@ if [ ! -d ~/.vim/syntax ]; then
     mkdir ~/.vim/syntax
 fi
 
-#need to add go.vim here
+curl -o ~/.vim/syntax/go.vim http://www.vim.org/scripts/download_script.php?src_id=11735
 
 if [ "$(uname)" == "Darwin" ]; then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
