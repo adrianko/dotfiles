@@ -57,3 +57,5 @@ alias listen=fnlisten
 alias mvup='mv * .[^.]* ..'
 alias proc=fnproc
 alias catcom=fncatcom
+alias gitc='git commit -m'
+alias gita='git add -p'
