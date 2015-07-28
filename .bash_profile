@@ -17,6 +17,8 @@ export PATH=$PATH:$GOPATH/bin
 export GITAWAREPROMPT=~/.bash/git-aware-prompt
 source $GITAWAREPROMPT/main.sh
 export PS1="\u@\h \w \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "
+export DOCKER_CERT_PATH=/Users/ak/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
 export DOCKER_HOST=tcp://192.168.59.103:2375
 unset DOCKER_CERT_PATH
 unset DOCKER_TLS_VERIFY
