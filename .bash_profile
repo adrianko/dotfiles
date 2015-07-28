@@ -11,12 +11,15 @@ export PATH=$PATH:/usr/local/bin
 #export PATH=$PATH:/usr/local/mysql/bin
 #export PATH=$PATH:/Developer/android-dt/sdk/platform-tools
 #export PATH=$PATH:/Developer/android-dt/sdk/tools
-
+#export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export GOPATH=$HOME/.go
 export PATH=$PATH:$GOPATH/bin
 export GITAWAREPROMPT=~/.bash/git-aware-prompt
 source $GITAWAREPROMPT/main.sh
 export PS1="\u@\h \w \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "
+export DOCKER_HOST=tcp://192.168.59.103:2375
+unset DOCKER_CERT_PATH
+unset DOCKER_TLS_VERIFY
 
 fnpyws() { 
 	python -m SimpleHTTPServer $1 
